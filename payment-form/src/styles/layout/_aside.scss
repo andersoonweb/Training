@@ -1,0 +1,51 @@
+.client_profile {
+	width: 30%;
+	height: 100%;
+	position: relative;
+	background: url('../images/rihanna.jpg') no-repeat;
+	background-size: cover;
+
+	&:after {
+		content: '';
+		display: block;
+		background: $gradientSidebar;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+	}
+}
+
+.client_informations {
+	position: absolute;
+	bottom: 0px;
+	padding: 20px;
+	color: $oneColor;
+	z-index: 999999;
+}
+
+.profile_client_message {
+	color: $messageColor;
+	display: block;
+	margin-bottom: 5px;
+	@include rem(font-size, 14px);
+}
+
+.client_value {
+	@include rem(font-size, 34px);
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 60px;
+		height: 3px;
+		background: $bgLinePrince;
+		display: block;
+		margin: 14px 0
+
+	}
+}
+
+.client_message {
+	@include rem(font-size, 18px);
+}
