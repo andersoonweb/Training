@@ -1,0 +1,16 @@
+.submit_payment {
+	@include col(1 / 1);
+	border: 0;
+	background: $btnSubmit;
+	color: $oneColor;
+	font-family: $fontDefault;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px 0;
+	font-weight: 700;
+	@include rem(letter-spacing, 5px);
+	@include rem(font-size, 16px);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}

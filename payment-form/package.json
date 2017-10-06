@@ -40,6 +40,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.3.0"
+    "gulp-imagemin": "^3.3.0",
+    "jeet": "^7.2.0",
+    "node-sass": "^4.5.3"
   }
 }

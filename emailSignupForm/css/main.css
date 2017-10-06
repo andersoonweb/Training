@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial; }
+
+body {
+  background: url("../images/bg.png") no-repeat;
+  background-size: cover; }
+
+.newsletter {
+  width: 370px;
+  height: 80vh;
+  margin: 50px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background: url(https://i.imgur.com/nJTtz9V.png) #FFFFFF center 210px no-repeat;
+  background-size: 580px 440px; }
+
+.header {
+  background: #4a9df9;
+  width: 100%;
+  padding: 10px 45px 0 45px;
+  position: relative;
+  z-index: 1; }
+  .header:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-6.5deg);
+    transform-origin: 100%;
+    z-index: -1; }
+
+.title-newsletter {
+  color: #FFFFFF;
+  text-align: center; }
+
+.description-newsletter {
+  color: #b3d3fb;
+  margin-top: 10px; }
+
+.register {
+  width: 80%;
+  margin: 50px auto 0 auto;
+  position: relative; }
+
+.form-control {
+  width: 85%;
+  border: 1px solid #afb8be;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.7); }
+  .form-control::placeholder {
+    color: #3d3f4f; }
+
+.send {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  background: #4a9df9;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  box-shadow: 3px 5px 20px rgba(74, 157, 249, 0.4);
+  cursor: pointer; }
+  .send:after {
+    content: '';
+    width: 25px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+    background: url(https://i.imgur.com/FcoxI4H.png) no-repeat;
+    background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */

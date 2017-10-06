@@ -1,3 +1,9 @@
+// Alias Example
+@mixin col($args...) {
+  @include column($args...);
+}
+
+
 @function parseInt($n) { /* 2 */
   @return $n / ($n * 0 + 1);
 }

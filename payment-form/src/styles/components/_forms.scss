@@ -1,0 +1,44 @@
+.form-client {
+	@include col( 2 / 3, $gutter: 0);
+	height: 100%;
+	position: relative;
+}
+
+.form_main {
+	@include center(550px);
+	font-family: $fontSecondary;
+}
+
+.form_input_title {
+	font-family: $fontDefault;
+	text-transform: uppercase;
+	font-weight: 700;
+	float: left;
+	display: block;
+	width: 100%;
+	color: $colorTitleInput;
+	@include rem(font-size, 10px);
+}
+
+.form-group {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.inputDefault {
+	width: 100%;
+	padding: 12px 10px;
+	border-radius: 5px;
+	margin: 8px 0;
+	border: 1px solid #aeafc1;
+	@include rem(font-size, 15px);
+	color: $textInputColor;
+	text-transform: uppercase;
+	font-family: $fontSecondary;
+}
+
+#expiryDate, #expiryDateYear { @include col( 1 / 2 ); }
+
+.expiry { @include col( 2 / 3); }
+
+.cvc { @include col( 1 / 3); }

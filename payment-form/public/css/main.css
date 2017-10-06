@@ -1,9 +1,20 @@
 .client_profile {
-  width: 30%;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: 0%;
   height: 100%;
   position: relative;
   background: url("../images/rihanna.jpg") no-repeat;
   background-size: cover; }
+  .client_profile::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .client_profile:last-child {
+    margin-right: 0%; }
   .client_profile:after {
     content: '';
     display: block;
@@ -67,18 +78,60 @@
   font-size: 1.8rem;
   /* 9 */ }
 
-.wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 100%; }
-
 .main {
-  width: 70%;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
   height: 450px; }
+  .main::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.format-payment {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 90px; }
+  .format-payment::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .format-payment:last-child {
+    margin-right: 0%; }
+
+.payment {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 100%;
+  background: #e9eaf5;
+  list-style: none; }
+  .payment::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .payment:last-child {
+    margin-right: 0%; }
+
+.paypal {
+  background: url("../images/PayPalLogo.png") 100px 30px #e9eaf5 no-repeat;
+  background-size: 120px 30px; }
+
+.creditCards {
+  background: url("../images/CreditCards.png") 40px 30px #FFF no-repeat;
+  background-size: 230px 30px; }
 
 * {
   box-sizing: border-box;
@@ -93,8 +146,8 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  height: 100%;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
 
 body {
   margin: 0;
@@ -466,9 +519,173 @@ template {
 
 @font-face {
   font-family: 'Brandon';
-  src: url("../fonts/Brandon.otf");
-  font-weight: 900; }
+  src: url("../fonts/Brandon.otf"); }
+
+@font-face {
+  font-family: 'BrandonBlack';
+  src: url("../fonts/BradonBlack.otf"); }
 
 @font-face {
   font-family: 'SourceCode';
   src: url("../fonts/SourceCodePro.otf"); }
+
+.form-client {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 100%;
+  position: relative; }
+  .form-client::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .form-client:last-child {
+    margin-right: 0%; }
+
+.form_main {
+  width: auto;
+  max-width: 550px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "SourceCode"; }
+  .form_main::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.form_input_title {
+  font-family: "Brandon";
+  text-transform: uppercase;
+  font-weight: 700;
+  float: left;
+  display: block;
+  width: 100%;
+  color: #aeafc1;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 10px;
+  /* 9 */
+  font-size: 1rem;
+  /* 9 */ }
+
+.form-group {
+  width: 100%;
+  margin-top: 20px; }
+
+.inputDefault {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin: 8px 0;
+  border: 1px solid #aeafc1;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 15px;
+  /* 9 */
+  font-size: 1.5rem;
+  /* 9 */
+  color: #454656;
+  text-transform: uppercase;
+  font-family: "SourceCode"; }
+
+#expiryDate, #expiryDateYear {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  #expiryDate::after, #expiryDateYear::after {
+    content: '';
+    display: table;
+    clear: both; }
+  #expiryDate:last-child, #expiryDateYear:last-child {
+    margin-right: 0%; }
+
+.expiry {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .expiry::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .expiry:last-child {
+    margin-right: 0%; }
+
+.cvc {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .cvc::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .cvc:last-child {
+    margin-right: 0%; }
+
+.submit_payment {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  border: 0;
+  background: #e8ce6e;
+  color: #FFF;
+  font-family: "Brandon";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0;
+  font-weight: 700;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  letter-spacing: 5px;
+  /* 9 */
+  letter-spacing: 0.5rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 16px;
+  /* 9 */
+  font-size: 1.6rem;
+  /* 9 */
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .submit_payment::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .submit_payment:last-child {
+    margin-right: 0%; }

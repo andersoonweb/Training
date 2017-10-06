@@ -1,12 +1,29 @@
-.wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+.main {
+	@include center(960px);
+	height: 450px;
 }
 
-.main {
-	width: 70%;
-	height: 450px;
-//	border: 1px solid #333;
+.wrapper {
+}
+
+.format-payment {
+	@include col( 1 / 1);
+	height: 90px;
+}
+
+.payment {
+	@include col( 1 / 2, $gutter: 0);
+	height: 100%;
+	background: #e9eaf5;
+	list-style: none;
+}
+
+.paypal {
+	background: url('../images/PayPalLogo.png') 100px 30px $btnPayment no-repeat;
+	background-size: 120px 30px;
+}
+
+.creditCards {
+	background: url('../images/CreditCards.png') 40px 30px #FFF no-repeat;
+	background-size: 230px 30px;
 }
